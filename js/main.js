@@ -247,7 +247,6 @@
    /* Smooth Scrolling
     * ------------------------------------------------------ */
     var ssSmoothScroll = function() {
-        alert('yo');
 
         $('.smoothscroll').on('click', function (e) {
             var target = this.hash,
