@@ -1,195 +1,910 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Kushagra Goyal</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/profile.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Kushagra Goyal</a></h1>
-					<p>Computer Science Undergraduate at the National University of Singapore</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two"> Work Experience</a></li>
-						<li><a href="#three">Projects</a></li>
-						<li><a href="#four">Activities and Socities</a></li>
-						<li><a href="#five">Resume</a></li>
-					</ul>
-				</nav>
-			</section>
+<head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Hola</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-				<!-- Main -->
-					<div id="main">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-						<!-- One -->
-							<section id="one">
-								<div class="container">
-									<header class="major">
-										<h3>About me</h3>
-									</header>
-									<p>Hi, I'm an undergraduate studying Computer Science at the National University of Singapore. I am a tech-enthusiast and like building things that make people's lives easier. 
-									<br></br>	
-									I would describe myself as a quick learner and an efficient team member. I love taking up challenges and exploring learning opportunities.
-									My hobbies include cricket, badminton and binge-watching several television series.</p>
-									<ul class="icons">
-										<li><a href="https://www.facebook.com/kushagra.goel.14" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="https://www.instagram.com/kushagra_15/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="https://github.com/kush1509" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-										<li><a href="https://www.linkedin.com/in/kushagra-goyal-5b1b4924/" target="_blank" class="icon fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
-										<li><a href="mailto:kushagragoyal@u.nus.edu" target="blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-								</div>
-							</section>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Work Experience</h3>
-									<div class="features">
-										<article>
-											<a href="https://versafleet.co/" target="_blank" class="image"><img src="images/Versafleet.png" alt="Versafleet" /></a>
-											<div class="inner">
-												<h4>Developer Intern</h4>
-												<h5>Dec 2017 - Present</h5>
-												<p>I am responsible for front-end and backend web development using React and Rails for new feature implementations, functional enhancements and bug fixes to improve the user experience of the Versafleet website. I am part of the development team which works closely with the product development team in an Agile methodology.</p>
-											</div>
-										</article>
-										<article>
-											<a href="http://www.nus.edu.sg/" target="_blank" class="image"><img src="images/NUS.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Teaching Assistant</h4>
-												<h5>Aug 2016 - Present</h5>
-												<p>I have been a TA for Introduction to Computer Networks (Spring 2018) and Programming Methodology (Fall 2017).
-												My responsibilities include conducting Discussion Groups, grading assignments, and holding consultation sessions for students.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://eazybottle.com/" target="_blank" class="image"><img src="images/EazyBottle.png" alt="" /></a>
-											<div class="inner">
-												<h4>EazyBottle | Software Engineering Intern</h4>
-												<h5>May 2017 - July 2017</h5>
-												<p>I worked on two cross-platform mobile apps, a client app and a delivery app, built using Ionic Framework. My work included new feature implementations, functional enhancements and bug fixes to improve the UI/UX of the apps.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-									<div class="features">
-										<article>
-											<a href="http://app.hunqry.com" target="_blank" class="image"><img src="images/Hunqry.png" alt="" /></a>
-											<div class="inner">
-												<h4>Hunqry</h4>
-												<h5>Sep 2017 - Nov 2017</h5>
-												<p>	A Web App that reduces the fuss to download multiple food apps, and makes ordering a lot faster and easier. Users can browse through collective menus, select food items beforehand, collate orders together and pay through DBS Singapore Paylah. In our team of 4, I worked on desigining APIs and data models and handled deployment using AWS. It won the Best Project Award at the university's bi-annual project showcase(STePS).</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://github.com/kush1509/NUSTalk" target="_blank" class="image"><img src="images/NUSTalk.png" alt="" /></a>
-											<div class="inner">
-												<h4>NUSTalk</h4>
-												<h5>May 2016 - Aug 2016</h5>
-												<p>A cross-platform Mobile App to serve as a messaging platform for professors, tutors and students in NUS and can be used to facilitate easier communication between them, the current method of communication being only email.We integrated a chatbot into the app that can answer queries relating to the modules and timetable of the user.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://github.com/kush1509" target="_blank" class="image"><img src="images/Pixelect.png" alt="" /></a>
-											<div class="inner">
-												<h4>Other Projects</h4>
-												<p>Other school projects include a <a href="https://github.com/kush1509" target="_blank">simple HTTP Server, a reliable File Transfer Protocol over UDP</a>. I also worked as the backend developer for <a href="https://github.com/kush1509/pixelect" target="_blank">Pixelect</a>, a Web App where facebook users can create groups with their friends and upload photos,upvote the photos they like and then publish the most liked photos to facebook.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Activities and Socities</h3>
-									<div >
-										<article>
-											<div class="inner">
-												<h4>Sports</h4>
-												<p>	I have been a member of the <strong>NUS Varsity Cricket Team</strong> since August 2016, participating in several tertiary tournaments. I have also represented my Faculty and Hall in the <strong>Inter Faculty Games and Inter Hall Games for Badminton</strong> and I was the runner up in the <strong>Badminton Men's Doubles Category of the Inter Residence Games 2017.</strong></p>
-											</div>
-										</article>
-										<article>
-											<div class="inner">
-												<h4>IEEE NUS Student Branch</h4>
-												<h5>Aug 2016 - Present</h5>
-												<p>	I have been the <strong>Project Manager</strong> and I was a part of the organisation team of several events like Arduino workshops and a hackathon. I actively participated in the whole process of preparation for the events, including Marketing, Publicity, Programs and Logistics.</p>
-											</div>
-										</article>
-										<article>
-											<div class="inner">
-												<h4>Voluntary Activities</h4>
-												<p>	I was a Volunteer Leader at <strong>RunNUS 2016</strong>, an annual running event organized by NUS Students' Sports Club to promote healthy lifestyles among the NUS population and the public. I was also a part of an NGO <strong>Making a Difference by being the Difference</strong> for three years and I actively participated in weekly activities like clean up and food distribution campaigns. I was also a part of the organizing team of three city wide marathons each of which attracted a turnout of 500.</p>
-											</div>
-										</article>
-										<article>
-											<div class="inner">
-												<h4>Hackathons</h4>
-												<p>	I have participated in several hackathons including the <strong>Microsoft Student Data Science Challenge 2017</strong> and the <strong>Amazon Web Services Hackday Singapore 2017</strong>, learning new technologies in short spans of time and building useful products at the events.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><img src="images/logo.png" alt="Homepage"></a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll"  href="#skills" title="skills">Skills</a></li>
+                <li><a class="smoothscroll"  href="#education" title="education">Education</a></li>    
+                <li><a class="smoothscroll"  href="#work" title="work">Work</a></li>                
+                <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                <li><a class="smoothscroll"  href="#blog" title="blog">Blog</a></li>
+                <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
 
 
-						<!-- Five -->
-							<section id="five">
-								<div class="container">
-									<h2 class="resume">
-										<a href="images/Resume.pdf" target="_blank">Resume</a>
-									</h2>
-								</div>
-							</section>
+   <!-- home
+   ================================================== -->
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/Trek.JPG" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
-					</div>
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Kushagra Goyal. All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
+        <div class="home-content">
 
-			</div>
+            <div class="row home-content__main">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+                <h3>Hello World!</h3>
 
-	</body>
+                <h1>
+                    I'm Kushagra Goyal. <br>
+                </h1>
+
+                <h2>Computer Science Undergraduate | National University of Singapore</h2>
+
+<!--                 <div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Latest Projects
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Me
+                    </a>
+                </div> -->
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="#"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="im im-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="im im-behance" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="im im-pinterest" aria-hidden="true"></i><span>Pinterest</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+        
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>About</h3>
+                <h1>Let me introduce myself!</h1>
+                <img class="about-picture" src="/home/kush/Downloads/download.png">
+                </img>
+                <p class="lead">Hey there! I'm Kushagra Goyal. I am currently a sophomore in the National University of Singapore (NUS). You can call me Kushagra, or Kush for short. I am pursuing a Bachelor's degree in Computer Science, and looking to specialize in Software Engineering and Artificial Intelligence.</p>
+            </div>
+        </div>
+
+        <div class="row about-content">
+
+            <div class="col-six tab-full left">
+                <h3>What strengths do I have?</h3>
+
+                <p>I did my schooling in India and being an international student here in Singapore has definitely helped me become a responsible and independent individual. My eager-to-learn attitude makes me curious and explorative about things. Moreover, I am very cooperative and understanding of my peers and colleagues, which make me a good team member and a potential leader. I have a optimistic perception of things which keeps me strong in the face of adversity.
+                </p>
+
+            </div>
+
+            <div class="col-six tab-full right">
+
+                <h3>What do I seek from this internship?</h3>
+
+                <p>In short, a sound entrepreneurial experience and inspiration and guidelines to start my own company some day. I want to gain deep insights into how startups work, everyday life at a startup and the challenges faced by them. It really excites me to be part of and contribute to a startup that might be one of the biggest companies in the world in the future. Moreover, I intend to hone my technical and presentational skills through this internship and grab every learning opportunity that comes my way in order to grow as a Computer Science Professional.
+                </p>
+
+            </div>
+
+        </div> <!-- end about-content -->
+
+
+        <div class="row about-content about-content--buttons">
+
+            <div class="col-six tab-full left">
+                <a href="#0" class="btn btn--primary full-width">Download My CV</a>
+            </div>
+            <div class="col-six tab-full right">
+                <a href="#0" class="btn full-width">Hire Me Now</a>
+            </div>
+
+        </div> <!-- end about-content buttons -->
+
+    <div class="skills parallax"></div> 
+
+    </section>
+
+    <!--skills
+    ================================================= -->
+    <section id="skills" class="s-skills target-section">
+
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>Skills</h3>
+                <p>Some skills that I have and am trying to improve upon.</p>
+            </div>
+        </div>
+
+        <div class="row about-content about-content--timeline">
+
+             <div class="col-three">
+               <h4>Productivity</h4>
+               <ul class="skill-bars">
+                    <li>
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>Git</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>IntelliJ IDE</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>Microsoft Word</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>Microsoft Powerpoint</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent50"><span>50%</span></div>
+                    <strong>Microsoft Excel</strong>
+                    </li>   
+                </ul>
+            </div> <!-- end left -->
+
+
+            <div class="col-three">
+               <h4>Web/Database</h4>
+               <ul class="skill-bars">
+                    <li>
+                        <div class="progress percent70"><span>70%</span></div>
+                        <strong>HTML/CSS</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent20"><span>20%</span></div>
+                        <strong>SQL</strong>
+                    </li>   
+                </ul>
+            </div> <!-- end left -->
+
+
+            <div class="col-three">
+               <h4>Programming/Scripting</h4>
+               <ul class="skill-bars">
+                    <li>
+                    <div class="progress percent80"><span>80%</span></div>
+                    <strong>Java</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>C</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>JavaScript</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent20"><span>20%</span></div>
+                    <strong>Ruby</strong>
+                    </li>   
+                </ul>
+            </div> <!-- end left -->
+
+
+            <div class="col-three">
+               <h4>Others</h4>
+               <ul class="skill-bars">
+                    <li>
+                    <div class="progress percent95"><span>95%</span></div>
+                    <strong>English</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent95"><span>95%</span></div>
+                    <strong>Hindi</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>Leadership</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent75"><span>60%</span></div>
+                    <strong>Project Management</strong>
+                    </li>   
+                    <li>
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>Documentation</strong>
+                </ul>
+            </div> <!-- end left -->
+
+           </div> 
+
+         <div class="education parallax"></div>
+
+
+    </section>
+
+     <!-- education
+    ================================================== -->
+
+
+    <section id="education" class="s-education target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>Education</h3>
+            </div>
+        </div>
+
+        <div class="row about-content about-content--timeline">
+
+            <div class="col-full">
+                <div class="timeline">
+                    <div class="timeline__block">
+                        <div class="col-six tab-full left">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">August 2016 - Present</p>
+                                <h3>Bachelor's Degree (Honours)</h3>
+                                <h5>National University of Singapore</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <ul>
+                                <li>I am currently pursuing a Bachelor's degree in Computer Science, and looking to specialize in Software Engineering and Artificial Intelligence.</li>
+                                <li>Varsity Athlete for NUS Varsity Cricket Team</li>
+                                <li>Internal Project Manager for IEEE NUS Branch Committee 2016-17.</li>
+                                <li>Volunteer Leader for RunNUS 2016, an annual running event organized by NUS Students' Sports Club to promote healthy lifestyles among the NUS population and the public.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-six tab-full left">
+                            <img src="images/NUS.jpg" class="timeline__image"></img>
+                        </div>   
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="col-six tab-full left">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe"></p>
+                                <h3>Indian School Certificate (GCA 'A' Levels Equivalent)</h3>
+                                <h5>Brightlands School, Dehradun</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <ul>
+                                    <li>Indian School Certificate Examinations (Class 12) - Physics, Chemistry, Mathematics, English, Computer Science.</li>
+                                    <li>Scored 99% marks in the Indian School Certificate Examinations and was among the top 1%ile in the country.</li>
+                                    <li>Member of the school's cricket, badminton and football teams.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-six tab-full left">
+                            <img src="images/Brightlands-School-Logo.jpg" class="timeline__image">
+                        </div>   
+                    </div> <!-- end timeline__block -->
+           
+                </div> <!-- end timeline -->
+            </div> <!-- end left -->
+
+
+        </div> <!-- end about-content timeline -->
+
+         <div class="work parallax"></div>
+
+    </section> <!-- end about -->
+    
+     <!-- works
+    ================================================== -->
+
+
+    <section id="work" class="s-work target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>Work Experience</h3>
+                <h1>I've worked at a few places.</h1>
+                <p class="lead">Every one of these has been a steep but exciting learning curve for me and I've taken away important skills from each.</p>
+            </div>
+        </div>
+
+        <div class="row about-content about-content--timeline">
+
+            <div class="col-full">
+                <div class="timeline">
+                    <div class="timeline__block">
+                        <div class="col-six tab-full left">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">August 2017 - Present</p>
+                                <h3>School of Computing, National University of Singapore</h3>
+                                <h5>Teaching Assistant</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>I have been responsible for facilitating discussions, tutoring concepts and grading weekly assignments for the following modules:
+                                 <ul>
+                                    <li>Spring 2018: CS2100 (Computer Organisation); the module familiarises students with the fundamentals of computing devices. 
+                                    </li>
+                                    <li>Fall 2017: CS1010 (Programming Methodology); the module introduces the concepts of programming in C to first year students.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-six tab-full left">
+                            <img src="images/NUS.jpg" class="timeline__image"></img>
+                        </div>   
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="col-six tab-full left">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">December 2017 - February 2018</p>
+                                <h3>Versafleet Pte Ltd</h3>
+                                <h5>Developer Intern</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <ul>
+                                    <li>I was responsible for full-stack development using ReactJS and Ruby on Rails for new feature implementations, functional enhancements and bug fixes to improve the user experience of the Versafleet web application, the company’s core product. </li>
+                                    <li>Worked closely with the product team in an Agile environment.
+                                    </li>
+                                    <li>Contributed to developing a vehicle routing solution for a potential partner company using jsprit, a Java library, which brought the company a successful contract.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-six tab-full left">
+                            <img src="images/Versafleet.png" class="timeline__image">
+                        </div>   
+                    </div> <!-- end timeline__block -->
+                    <div class="timeline__block">
+                        <div class="col-six tab-full left">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">May 2017 - July 2017</p>
+                                <h3>EazyBottle Pvt Ltd</h3>
+                                <h5>Software Engineering Intern</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <ul>
+                                    <li>I assisted the development of two cross-platform mobile apps, a client app for online orders and a delivery app, both built using Ionic Framework. 
+                                    </li>
+                                    <li>My work included new feature implementations, functional enhancements and bug fixes to improve the UI/UX of the apps.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-six tab-full left">
+                            <img src="images/EazyBottle.png" class="timeline__image">
+                        </div>   
+                    </div> <!-- end timeline__block -->
+
+                   
+                </div> <!-- end timeline -->
+            </div> <!-- end left -->
+
+
+        </div> <!-- end about-content timeline -->
+
+    </section> <!-- end about -->
+
+    <div class="works parallax"></div>
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3>Portfolio</h3>
+                <h1>See My Latest Projects.</h1>
+                
+                <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+            </div>
+        </div>
+
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="http://isteps.comp.nus.edu.sg/event/11th-steps/module/CS3216/project/7" class="thumb-link" title="HunQRy" target="_blank">
+                                <img src="images/HunqryIcon.png" alt="">
+                                <span class="shadow-overlay"></span>
+                                <p class="item-folio__desc">HunQRy is a web app built using ReactJS and Express.js that makes ordering food a lot faster and easier. Users can browse through collective menus, select food items beforehand, collate orders together and pay through DBS Singapore Paylah. </p>
+
+                                <p class="item-folio__desc"><i> Contribution: </i> In our team of 4, I worked as the backend developer and designed APIs and data models and handled deployment using AWS. The project won the <strong>Best Project Award</strong> at the university bi-annual project showcase. </p>
+                            </a>
+                        </div>
+
+                    <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                HunQRy
+                            </h3>
+                            <p class="item-folio__cat">
+                                Web Development
+                            </p>
+                        </div> 
+
+                        <a href="http://isteps.comp.nus.edu.sg/event/11th-steps/module/CS3216/project/7" class="item-folio__project-link" title="Project link" target="_blank">
+                            <i class="im im-link"></i>
+                        </a>
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="https://drive.google.com/open?id=0BxGwznR7uUBvS1RFUnNqRkd1WGM" class="thumb-link" target="_blank">
+                                <img src="images/NUSTalk.png" alt="">
+                                <span class="shadow-overlay"></span>
+                                <p class="item-folio__desc">NUSTalk is a cross-platform Mobile App built using Ionic Framework and Firebase to serve as a messaging platform for professors, tutors and students in NUS and can be used to facilitate easier communication between them, the current method of communication being only email. We also integrated a chatbot into the app that was built using Microsoft Bot Framework.</p>
+
+                                <p class="item-folio__desc"><i> Contribution: </i> Our team of 2 built this application from scratch in about two months. I mainly worked on the building the frontend of the app and integrating it with firebase. We presented the app at the Orbital project showcase at NUS and invited ~50 users to test our application.</p>
+                            </a>
+                        </div>
+
+                    <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                NUSTalk
+                            </h3>
+                            <p class="item-folio__cat">
+                                Mobile App Development
+                            </p>
+                        </div> 
+
+                        <a href="https://github.com/kush1509/NUSTalk" class="item-folio__project-link" title="Github link" target="_blank">
+                            <i class="im im-link"></i>
+                        </a>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="https://github.com/kush1509/pixelect" class="thumb-link" target="_blank">
+                                <img src="images/Pixelect.png" alt="">
+                                <span class="shadow-overlay"></span>
+                                <p class="item-folio__desc">Pixelect is a Web App built using Vue.js and Express.js where facebook users can create groups with their friends and upload photos, upvote the photos they like and then publish the most liked photos to facebook.</p>
+
+                                <p class="item-folio__desc"><i> Contribution: </i> Other than coming up with the idea and concept behind this project, I worked as the backend developer in our team of 4. It being my very first web application development experience, I learnt a lot about APIs and Database structures.</p>
+                            </a>
+                        </div>
+
+                    <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Pixelect
+                            </h3>
+                            <p class="item-folio__cat">
+                                Web Development
+                            </p>
+                        </div> 
+
+                        <a href="https://github.com/kush1509/pixelect" class="item-folio__project-link" title="Github link" target="_blank">
+                            <i class="im im-link"></i>
+                        </a>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="#" class="thumb-link" target="_blank">
+                                <img src="images/Microsoft.jpg" alt="">
+                                <span class="shadow-overlay"></span>
+                                <p class="item-folio__desc">Our team of 4 implemented machine learning to create a medical tool, which when provided with a patient’s medical and sexual history and medical test results, can predict the risk of cervical cancer in a patient. <br><br>The predictive model was created using Microsoft Azure Machine Learning tool and the dataset comprised demographic information, habits, and historic medical records of 858 patients in Caracas, Venezuela. The tool helps healthcare centres like hospitals to predict the risk of cervical cancer for its patients and hence advise them accordingly.</p>
+                            </a>
+                        </div>
+
+                    <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Microsoft NUS Data Science Student Challenge
+                            </h3>
+                            <p class="item-folio__cat">
+                                Hackathon
+                            </p>
+                        </div> 
+
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="https://cs2103jan2018-w09-b2.github.io/main/" class="thumb-link" target="_blank">
+                                <img src="images/sample-image.jpg" alt="">
+                                <span class="shadow-overlay"></span>
+                                <p class="item-folio__desc">contactHeRo is a contact management solution for recruiters across companies who need a quick and efficient way to manage the contact details and profiles of their potential recruits. It is a Command Line Interface(CLI) application with intuitive usage and effective features. This project is a part of a Software Engineering module and is still under development.</p>
+
+                                <p class="item-folio__desc"><i> Contribution: </i>I am the Team Lead for this project and my responsibilities include Project Management, Development and Managing Deliverables and Deadlines.</p>
+                            </a>
+                        </div>
+
+                    <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                contactHeRo
+                            </h3>
+                            <p class="item-folio__cat">
+                                Desktop Application
+                            </p>
+                        </div> 
+
+                    <a href="https://github.com/CS2103JAN2018-W09-B2/main" class="item-folio__project-link" title="Github link" target="_blank">
+                            <i class="im im-link"></i>
+                        </a>
+
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->    
+
+            <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="#" class="thumb-link" target="_blank">
+                                <img src="images/AWS.jpg" alt="">
+                                <span class="shadow-overlay"></span>
+                                <p class="item-folio__desc">Our team of 4 built a smart home system for the elderly using IOT Technology, implementing features including a smart window, a security alert system and a healthcare system.<br><br>We created the prototype using Intel Edison Compute Module and various sensors including a temperature and humidity sensor, motion sensor and implemented the features using Node.js. We also tried our hand at AWS Technologies like S3 bucket and the AWS IOT button.</p>
+                            </a>
+                        </div>
+
+                    <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Amazon Web Services HackDay Singapore
+                            </h3>
+                            <p class="item-folio__cat">
+                                Hackathon
+                            </p>
+                        </div> 
+
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+
+                
+            </div>
+        </div> <!-- end masonry -->
+
+    </section> <!-- end works -->
+
+
+
+    <!-- testimonials
+    ================================================== -->
+    <div class="s-testimonials">
+
+        <div class="overlay"></div>
+
+        <div class="row testimonials-header">
+            <div class="col-full">
+                <h1 class="h02">What People Say.</h1>
+            </div>
+        </div>
+
+        <div class="row testimonials">
+
+            <div class="col-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <!-- <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar"> -->
+                    <p><i>"We found him to be a self-motivated learner who is determined and enthusiastic about all tasks assigned to him. He consistently explores new ways to solve problems and does not hesitate to ask questions. Kush is also a strong team player and is easy to work with. He learns fast and can handle multiple tasks concurrently, inspiring respect and cooperation from the development team."</i></p>
+                    <div class="testimonials__author h06">
+                        Shamir Rahim
+                        <span>Founder and CEO, Versafleet Pte Ltd   </span>
+                    </div>
+                    <a target= "_blank" href="https://drive.google.com/open?id=1NWnsdW8VgSs7nVk3ND7vGCEI_eOLMHy1" class="testimonials__link"> View Full Testimonial </a>
+                </div>
+
+                <div class="testimonials__slide">
+                    <!-- <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar"> -->
+                    <p><i>"I was always impressed by Kushagra's ability to manage his time well and complete the work assigned to him. Although he is an independent learner, Kushagra sought help and guidance whenever he needed it. He communicated his doubts well and was never afraid of making mistakes."</i></p>
+                    <div class="testimonials__author h06">
+                        Vishwa Kolkar
+                        <span>CEO, EazyBottle Pvt Ltd</span>
+                    </div>
+                    <a target= "_blank" href="https://drive.google.com/open?id=1Fz7XA8ctvBam4x_uc5h22fm5piCFQLQ-" class="testimonials__link"> View Full Testimonial </a> 
+                </div>
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </div> <!-- end s-testimonials -->
+
+
+   
+    <!-- s-stats
+    ================================================== -->
+    <section id="stats" class="s-stats">
+        <div class="row block-1-4 block-tab-1-2 block-mob-full stats">
+
+            <div class="col-block stats__col ">
+                <div class="stats__count">
+                    128
+                </div>
+                <h4>Awards Received</h4>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">
+                    1500
+                </div>
+                <h4>Cups of Coffee</h4>
+            </div>
+            <div class="col-block stats__col stats__col--highlight">
+                <div class="stats__upsign">
+                    <a href="#"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+                <div class="stats__count">
+                    110
+                </div>
+                <h4>Projects Completed</h4>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">
+                    101
+                </div>
+                <h4>Happy Clients</h4> 
+            </div>
+
+        </div>
+    </section> <!-- end s-stats -->
+
+
+    <!-- s-stats
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="overlay"></div>
+
+        <div class="row narrow section-intro">
+            <div class="col-full">
+                <h3>Contact</h3>
+                <h1>Say Hello.</h1>
+                
+                <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+            </div>
+        </div>
+
+        <div class="row contact__main">
+            <div class="col-eight tab-full contact__form">
+                <form name="contactForm" id="contactForm" method="post" action="">
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning -->
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div> 
+            
+                <!-- contact-success -->
+                <div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+                        
+            </div>
+            <div class="col-four tab-full contact__infos">
+                <h4 class="h06">Phone</h4>
+                <p>Phone: (+63) 555 1212<br>
+                Mobile: (+63) 555 0100<br>
+                Fax: (+63) 555 0101
+                </p>
+
+                <h4 class="h06">Email</h4>
+                <p>someone@holawebsite.com<br>
+                info@holawebsite.com
+                </p>
+
+                <h4 class="h06">Address</h4>
+                <p>
+                1600 Amphitheatre Parkway<br>
+                Mountain View, CA<br>
+                94043 US
+                </p>
+            </div>
+
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+                <div class="footer-logo">
+                    <a class="footer-site-logo" href="#0"><img src="images/logo.png" alt="Homepage"></a>
+                </div>
+
+                <ul class="footer-social">
+                    <li><a href="#0">
+                        <i class="im im-facebook" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </a></li>
+                    <li><a href="#0">
+                        <i class="im im-twitter" aria-hidden="true"></i>
+                        <span>Twitter</span>
+                    </a></li>
+                    <li><a href="#0">
+                        <i class="im im-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a></li>
+                    <li><a href="#0">
+                        <i class="im im-behance" aria-hidden="true"></i>
+                        <span>Behance</span>
+                    </a></li>
+                    <li><a href="#0">
+                        <i class="im im-pinterest" aria-hidden="true"></i>
+                        <span>Pinterest</span>
+                    </a></li>
+                </ul>
+                    
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Hola 2017</span> 
+                    <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>	
+                </div>
+
+                <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
