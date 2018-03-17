@@ -1802,7 +1802,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content h3 {
     font-family: "montserrat-bold", sans-serif;
     font-size: 1.8rem;
-    color: #862121;
+    color: #5DBCD2;
     text-transform: uppercase;
     letter-spacing: .5rem;
     position: relative;
@@ -1845,8 +1845,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__buttons {
-    position: absolute;
-    right: 0;
+    display: inline-block;
     bottom: 2.1rem;
     text-align: center;
 }
