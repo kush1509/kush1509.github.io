@@ -134,6 +134,7 @@ a:focus {
 
 .education {
     background-image: url("../images/NUSCampus.jpg");
+    margin-top: 15.6rem;
 }
 
 .skills {
@@ -2285,6 +2286,12 @@ html.no-csstransitions .home-content__main {
     display:block;
     margin:auto;
     min-width: 30rem;
+    max-width: 40rem;
+}
+
+.NUS-image {
+    height: 22rem;
+    font-size: 1.5rem;
 }
 
 .timeline__content {
@@ -2330,7 +2337,7 @@ html.no-csstransitions .home-content__main {
     margin-top: 0;
 }
 
-.timeline__desc p {
+.timeline__desc {
     margin: 0;
     padding-bottom: 3rem;
     font-size: 1.5rem;
@@ -2338,10 +2345,11 @@ html.no-csstransitions .home-content__main {
 
 .s-education {
     padding-top: 15rem;
-    /*padding-bottom: 15.6rem;*/
-    background-color: #F1F1F1;
+    padding-bottom: 15.6rem;
+    background-color: #FFFFFF;
     position: relative;
 }
+
 
 .s-work {
     padding-top: 15rem;
@@ -2352,7 +2360,6 @@ html.no-csstransitions .home-content__main {
 
 .s-skills {
     padding-top: 15rem;
-    padding-bottom: 15.6rem;
     background-color: #f1f1f1;
     position: relative;
 }
@@ -2431,8 +2438,7 @@ html.no-csstransitions .home-content__main {
 
 .s-works {
     padding-top: 15rem;
-    padding-bottom: 15.6rem;
-    background-color: #f1f1f1;
+    background-color: #F1F1F1;
     position: relative;
 }
 
