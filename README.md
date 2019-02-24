@@ -1,3 +1,3 @@
 # kush1509.github.io
 
-Online Resume
+Online Resume - kushagragoyal.me
